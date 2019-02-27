@@ -16,7 +16,7 @@ class LoginPage extends Component {
       this.handleSubmit = this.handleSubmit.bind(this);
 
       if(this.props.isAuthed){
-         this.props.redirect();
+         //this.props.redirect();
       }
    }
    handleChangeUser(event) {
@@ -35,7 +35,7 @@ class LoginPage extends Component {
       alert('P: ' + this.state.passValue);
       var authSucces = this.props.authenticate(this.state.userValue, this.state.passValue);
       if (authSucces){
-         this.props.redirect();
+         //this.props.redirect();
       }
       else{
          this.setState({authFailed: true});
